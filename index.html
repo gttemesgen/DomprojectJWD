@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JWD Object Database</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <form>
+      <!-- first name input field -->
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <!-- last name input field -->
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <!-- portfolio url input field -->
+      <label for="portfolio">Portfolio:</label>
+      <input type="text" id="portfolio" name="portfolio"><br><br>
+      <!-- drop-down list with two options -->
+      <label for="skill">Favorite Skill:</label>
+      <select name="skill" id="skill">
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JS">JS</option>
+      </select>
+      <br><br>
+      <!-- submit button -->
+      <input type="submit" id="submit" value="Submit" onclick="webDatabase.teamMemberMethod()">
+    </form>
+    <!-- div to display your results -->
+    <div id="results">
+      <p>Results will appear here.</p>
+    </div>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
